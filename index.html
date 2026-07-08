@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.pexels.com" />
+
+    <!-- Title & SEO -->
+    <title>ClickInRoom - Premium Hotel Digital Marketing Agency</title>
+    <meta
+      name="description"
+      content="Transform your hotel business with ClickInRoom's comprehensive digital solutions. Website development, SEO, digital marketing, and luxury hospitality services."
+    />
+    <meta name="keywords" content="hotel marketing, digital marketing agency, hotel SEO, website development, hospitality solutions, Ludhiana" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="ClickInRoom - Premium Hotel Digital Solutions" />
+    <meta
+      property="og:description"
+      content="India's premier hospitality digital solutions provider. Elevate your hotel's online presence and maximize revenue."
+    />
+    <meta property="og:image" content="https://clickinroom.net/logo.png" />
+    <meta property="og:url" content="https://clickinroom.net" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ClickInRoom - Premium Hotel Digital Solutions" />
+    <meta
+      name="twitter:description"
+      content="Transform your hotel business with cutting-edge digital marketing and web development."
+    />
+    <meta name="twitter:image" content="https://clickinroom.net/logo.png" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="msapplication-TileColor" content="#0a0a0a" />
+
+    <!-- PWA -->
+    <meta name="application-name" content="ClickInRoom" />
+
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//images.pexels.com" />
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://clickinroom.net" />
+  </head>
+
+  <body class="bg-black">
+    <div id="root"></div>
+
+    <!-- SPA 404 redirect for GitHub Pages -->
+    <script>
+      (function() {
+        let redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+
+    <!-- Main Script -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
